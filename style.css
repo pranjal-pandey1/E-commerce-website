@@ -12,35 +12,43 @@
     height: 2.65rem;
     background-color: #022143;
 }
+
 h1{
     font-size: 50px;
     line-height: 64px;
     color: #222;
 }
+
 h2{
     font-size: 46px;
     line-height: 54px;
     color: #222;
 }
+
 h4{
     font-size: 20px;
     color: #222;
 }
+
 h6{
     font-weight: 700;
     font-size: 12px;
 }
+
 p{
     font-size: 16px;
     color: #465b52;
     margin: 15px 0 20px 0;
 }
+
 .section-p1{
     padding: 40px 20px;
 }
+
 .section-m1{
     margin: 30px 0px;
 }
+
 body{
     background-color: white;
     width: 100%;
@@ -69,6 +77,7 @@ body{
     height: 70px;
     width: 90px; 
 }
+
 #navbar{
     
     display: flex;
@@ -76,11 +85,13 @@ body{
     justify-content: center;
     margin-right: 18px;
 }
+
 #navbar li{
     list-style: none;
     padding: 0 20px;
     position: relative;
 }
+
 #navbar li a{
     font-family: monospace;
     text-decoration: none;
@@ -89,10 +100,12 @@ body{
     color: rgba(241, 240, 240, 0.722);
     transition:  0.3s ease;
 }
+
 #navbar li a:hover,
 #navbar li a.active{
     color: #ffffff; 
 }
+
 #navbar li a.active::after,
 #navbar li a:hover::after{
     content: "";
@@ -103,9 +116,10 @@ body{
     bottom: -4px;
     left: 20px;
 }
+
 /*Home Page*/
 #hero{
-    background-image: url("img/hero.png");
+    background-image: url("img/hero1.png");
     height: 85vh;
     width: 100%;
     /* background-color: #424342; */
@@ -231,12 +245,14 @@ body{
 #product1{
     /* background-color: rgb(0, 0, 0); */
 }
+
 #product1 .pro-container{
     display: flex;
     justify-content: space-between;
     /* padding-top: 20px; */
     flex-wrap: wrap;
 }
+
 #product1 .pro{
     width: 15%;
     min-width: 250px;
@@ -352,6 +368,7 @@ body{
     padding: 0 100px;
 
 }
+
 #banner .text-container h2{
     font-family: monospace;
     color: rgb(18, 5, 55);
@@ -529,4 +546,24 @@ body{
     cursor: pointer;
     font-weight: 700;
     font-size: 18px;
+}
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(banners/b10.jpg);
+    min-width: 700px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+
 }
