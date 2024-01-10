@@ -51,3 +51,5 @@ const resetMagneto = (event) => {
 
 magneto.addEventListener('mousemove', activeMagneto)
 magneto.addEventListener('mouseleave', resetMagneto)
+
+

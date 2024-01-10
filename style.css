@@ -11,6 +11,25 @@
 
 }
 
+html.lenis {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
 
 
 h1{
@@ -82,7 +101,8 @@ body{
     border-radius: 2px solid white;
     border-radius: 15px 15px 15px 15px;
     border: none;
-    background-color: rgba(0, 0, 0, 0.854);
+    background-color: #211A1E;
+    /* background-color: rgba(247, 247, 247, 0.854); */
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
@@ -94,6 +114,7 @@ body{
 }
 
 .magneto:hover{
+    
     background-color: #131635;
 }
 
@@ -138,7 +159,7 @@ body{
     font-size: 20px;
     font-weight: 600;
     color: rgba(241, 240, 240, 0.477);
-    transition: color 0.5s ease-in-out;
+    transition: color 0.1s ease-out;
     
 }
 
@@ -680,8 +701,10 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    
     /* background-image: url("banners/f_banner.png"); */
     background-position: 20% 30%;
+    border-radius: 5px;
     background-color: #020122;
     
 }
@@ -731,6 +754,28 @@ body{
 
 }
 
+.footer{
+    border-top: 1px solid white;
+    padding: px;
+    /* padding: 0px; */
+    /* margin: 0px; */
+    background-color: #232220;
+}
+
+footer img{
+    height: 100px;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.col img{height: 100px;}
+.col h4{color: rgb(216, 179, 29);}
+.col p,a{color: white;
+font-style: italic;
+text-decoration: none;
+}
 
 
 .footer{
