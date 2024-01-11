@@ -755,32 +755,134 @@ body{
 }
 
 .footer{
-    border-top: 1px solid white;
-    padding: px;
-    /* padding: 0px; */
-    /* margin: 0px; */
+    
+    /* display: flex; */
+    /* padding: 50px; */
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
     background-color: #232220;
 }
 
-footer img{
-    height: 100px;
-}
-
-.col{
+.sub{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    /* border: 2px solid red; */
+    gap: 5px;
     flex-direction: column;
+    align-items: flex-start;
 }
-.col img{height: 100px;}
-.col h4{color: rgb(216, 179, 29);}
-.col p,a{color: white;
-font-style: italic;
-text-decoration: none;
+.col img{
+    height: 120px;
 }
 
+.col h4{
+    font-size: 22px;
+    padding-bottom: 20px;
+    color: rgb(216, 179, 29);
+}
 
-.footer{
+.col h4:hover{
+    color: rgba(216, 179, 29, 0.772);
+}
 
-    height: 500px;
-    width: 100%;
-    /* background-color: black; */
+.col p,a{
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 15px;
+    /* margin-bottom: 10px; */
+}
+
+.col a:hover{
+    color: rgba(255, 255, 255, 0.833);
+}
+
+.footer .col-install{
+    margin: 5px;
+}
+
+@media screen and (max-width: 641px) {
+    
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .magneto{
+        display: none;
+    }
+
+    #hero{
+        height: 80vh;
+        width: 100vw;
+    }
+    #hero video{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       z-index: -2;
+    }
+    
+    #hero{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start ;
+        justify-content: center;
+    }
+    
+    #hero h4{
+        color: white;
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    
+    #hero h2{
+        color: white;
+    }
+    
+    #hero h1{
+    
+        color: #f3f706;
+    }
+    
+    #hero p{
+        color: #efefef;
+        font-weight: bold;
+    }
+    
+    .hero button{
+    
+        position: relative;
+        font-family: monospace;
+        /* background-image: url(img/button.png); */
+        background-color: black;
+        color: white;
+        border-radius: 3px;
+        border: none;
+        padding: 8px 50px;
+        text-transform: uppercase;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 18px;
+        transition: background-color .2s ease-in-out, color .4s ease-in-out,border-color .4s ease-in-out;
+    }
+    
+    .hero button:hover{
+        background-color: #fff;
+        color: black;
+    }
+    
 }
